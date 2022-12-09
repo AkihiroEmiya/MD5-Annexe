@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+        <meta charset="UTF-8">
+        <title>MD5 - Annexe</title>
+        <link rel="stylesheet" href="annexe.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="app">
+            <div class="curr-value">0</div>
+            <!--IN GAME-->
+            <div class="curr-dices"></div>
+            <div class="button-wrapper">
+                Throw
+            </div>
+            <!--END GAME-->
+            <div class="result">
+                You won !
+            </div>
+            <div class="reset-button button-wrapper">
+                Reset
+            </div>
+            <!--********-->
+            <div id="result-shower">
+                <span id="result-value">0</span>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="form-wrapper">
+                <div class="welcome-wrapper">
+                    <span class="welcome">Welcome back !</span>
+                    <div class="title-underline"></div>
+                </div>
+
+            <div class="form">
+                <input id="start-value" type="number" scale=1 required autocomplete="off">
+                <div class="underline"></div>
+                <label class="label-name">Start value</label>
+            </div>
+
+            <div class="change-dice">Changer le set de dé</div>
+
+            <div class="button-div">
+                <input type="submit" class="button" id="start-game">
+            </div>
+        </div>
+        <div class="dice-inv-wrapper">
+            <div class="dice-wrapper">
+                <div class="add-wrapper">
+                    <input id="add-dice-value" type="number" step="1" placeholder="Dice Value" required autocomplete="off">
+                    <span class="add-button">+</span>
+                </div>
+                <div class="dice-inv">
+                    <div class="inv-dices">
+
+                    </div>
+                </div>
+                <div class="saver">Save</div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
+<script src="./DiceGame.js"></script>
+<script src="./annexe.js"></script>
